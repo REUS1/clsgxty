@@ -382,18 +382,19 @@ body {
     var i = 0;
     function playNext() {
         var music = document.getElementById('music');
-        if(i < 5){
+        if(i < 6){
             i=i+1;
         }
         else
             i=0;
         switch(i){
             case 0: music.src="遇见你的时候.mp3"; break;
-            case 1: music.src="孤独的总和.mp3";break;
-            case 2: music.src="咖喱咖喱.mp3";break;
-            case 3: music.src="独家记忆.mp3";break;
-            case 4: music.src="大鱼.mp3";break;
-            case 5: music.src="约定.mp3";break;
+            case 1: music.src="sugar.mp3";break;
+            case 2: music.src="孤独的总和.mp3";break;
+            case 3: music.src="咖喱咖喱.mp3";break;
+            case 4: music.src="独家记忆.mp3";break;
+            case 5: music.src="大鱼.mp3";break;
+            case 6: music.src="约定.mp3";break;
             default: break;
         }
         music.play();

@@ -114,6 +114,7 @@
 		var music5 = new Music("咖喱咖喱","raw/咖喱咖喱.mp3");
 		var music6 = new Music("独家记忆","raw/独家记忆.mp3");
 		var music7 = new Music("大鱼","raw/大鱼.mp3");
+		var music8 = new Music("约定","raw/约定.mp3");
 		musicQueue.addMusic(music1);
 		musicQueue.addMusic(music2);
 		musicQueue.addMusic(music3);
@@ -121,6 +122,7 @@
 		musicQueue.addMusic(music5);
 		musicQueue.addMusic(music6);
 		musicQueue.addMusic(music7);
+		musicQueue.addMusic(music8);
 		musicTitleElement.innerHTML = music1.name;
 		player.src = music1.src;
 		setTimeout(setDuration, 500);
@@ -130,6 +132,7 @@
 		appendMusicToDOM("孤独的总和");
 		appendMusicToDOM("咖喱咖喱");
 		appendMusicToDOM("独家记忆");
+		appendMusicToDOM("约定");
 		appendMusicToDOM("大鱼");
 		setSelected(index);
 	})();

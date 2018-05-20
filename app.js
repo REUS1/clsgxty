@@ -132,8 +132,8 @@
 		appendMusicToDOM("孤独的总和");
 		appendMusicToDOM("咖喱咖喱");
 		appendMusicToDOM("独家记忆");
-		appendMusicToDOM("约定");
 		appendMusicToDOM("大鱼");
+		appendMusicToDOM("约定");
 		setSelected(index);
 	})();
 	/* end init view */

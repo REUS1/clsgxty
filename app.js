@@ -108,6 +108,7 @@
 
 	(function init() {
 		var music1 = new Music("遇见你的时候所有星星都落到了我的头上", "raw/遇见你的时候.mp3");
+		var music9 = new Music("我多喜欢你,你会知道","raw/我多喜欢你,你会知道.mp3");
 		var music2 = new Music("宝贝","raw/宝贝.mp3");
 		var music3 = new Music("sugar","raw/sugar.mp3");
 		var music4 = new Music("孤独的总和","raw/孤独的总和.mp3");
@@ -116,24 +117,26 @@
 		var music7 = new Music("大鱼","raw/大鱼.mp3");
 		var music8 = new Music("约定","raw/约定.mp3");
 		musicQueue.addMusic(music1);
-		musicQueue.addMusic(music2);
+		musicQueue.addMusic(music9);
 		musicQueue.addMusic(music3);
 		musicQueue.addMusic(music4);
 		musicQueue.addMusic(music5);
 		musicQueue.addMusic(music6);
 		musicQueue.addMusic(music7);
 		musicQueue.addMusic(music8);
+		musicQueue.addMusic(music2);
 		musicTitleElement.innerHTML = music1.name;
 		player.src = music1.src;
 		setTimeout(setDuration, 500);
 		appendMusicToDOM("遇见你的时候所有星星都落到了我的头上");
-		appendMusicToDOM("宝贝");
+		appendMusicToDOM("我多喜欢你,你会知道");
 		appendMusicToDOM("sugar");
 		appendMusicToDOM("孤独的总和");
 		appendMusicToDOM("咖喱咖喱");
 		appendMusicToDOM("独家记忆");
 		appendMusicToDOM("大鱼");
 		appendMusicToDOM("约定");
+		appendMusicToDOM("宝贝");
 		setSelected(index);
 	})();
 	/* end init view */
